@@ -29,7 +29,7 @@ Double-click `index.html` to open directly in any modern browser.
 
 ```javascript
 {
-  id: "update-5",
+  id: "update-6",
   date: "November 2026",
   tag: "ADYK WIQN",
   title: "Your Update Title",
@@ -53,10 +53,10 @@ d:/ashwanth own/
 │   ├── updates.js           # Chronological updates list & rendering engine
 │   └── main.js              # Sticky nav, mobile menu, WhatsApp cards, clipboard copy, reveal observer
 ├── assets/
-│   ├── rejiesh-portrait.jpg # Main portrait photo (Opening hero section)
-│   ├── rejiesh-work-1.jpg   # Work photo 1: Focused on development at desk (Founder Story)
-│   ├── rejiesh-work-2.jpg   # Work photo 2: Working on campus with laptop (About ADYK)
-│   ├── rejiesh-ashwanth.jpg # Portrait backup
+│   ├── rejiesh-portrait.jpg # Photo 1: Portrait photo (Opening hero section)
+│   ├── rejiesh-work-1.jpg   # Photo 2: Focused on development at desk (Founder Story)
+│   ├── rejiesh-work-2.jpg   # Photo 3: Working on campus with laptop (About ADYK)
+│   ├── rejiesh-ashwanth.jpg # Portrait asset backup
 │   └── favicon.svg          # Minimalist monochrome favicon
 └── README.md                # Documentation & instructions
 ```

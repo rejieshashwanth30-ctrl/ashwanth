@@ -827,6 +827,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.product-status-tag.status-live {
+  background-color: var(--text-heading);
+  color: #ffffff;
+  border-color: var(--text-heading);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .product-name {
   font-size: 1.35rem;
   font-weight: 700;
@@ -852,6 +860,62 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+}
+
+.product-links-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.btn-product-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.48rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--btn-primary-bg);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-product-live:hover {
+  background-color: var(--btn-primary-hover);
+  color: var(--btn-primary-text);
+}
+
+.btn-product-live:active {
+  transform: translateY(1px);
+}
+
+.btn-product-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.48rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: var(--text-heading);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-product-github:hover {
+  background-color: var(--bg-muted);
+  border-color: var(--text-heading);
+  color: var(--text-heading);
+}
+
+.btn-product-github:active {
+  transform: translateY(1px);
 }
 
 /* --------------------------------------------------------------------------
@@ -1089,6 +1153,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -1224,6 +1290,27 @@ h1, h2, h3, h4, h5, h6 {
   overflow-wrap: anywhere;
 }
 
+.channel-card-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.channel-email-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.email-value {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 .btn-copy-email {
   padding: 0.4rem 0.8rem;
   font-size: 0.8rem;
@@ -1243,8 +1330,9 @@ h1, h2, h3, h4, h5, h6 {
 .copy-feedback-toast {
   display: none;
   font-size: 0.75rem;
+  font-weight: 600;
   color: var(--text-heading);
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 .copy-feedback-toast.show-feedback {
@@ -2084,6 +2172,82 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.74rem;
   }
 
+  .product-links-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.45rem;
+  }
+
+  .btn-product-live, .btn-product-github {
+    width: 100%;
+    justify-content: center;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.78rem;
+    box-sizing: border-box;
+  }
+
+  .channel-card-email {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .channel-email-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .updates-timeline {
+    gap: 0.75rem;
+  }
+
+  .update-card {
+    grid-template-columns: 14px 1fr;
+    gap: 0.7rem;
+  }
+
+  .update-node {
+    width: 7px;
+    height: 7px;
+    margin-top: 0.45rem;
+  }
+
+  .update-card-content {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .update-meta {
+    gap: 0.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .update-badge {
+    font-size: 0.64rem;
+    padding: 0.1rem 0.35rem;
+  }
+
+  .update-date {
+    font-size: 0.72rem;
+  }
+
+  .update-title {
+    font-size: 0.92rem;
+    line-height: 1.35;
+    margin-bottom: 0.25rem;
+  }
+
+  .update-body {
+    font-size: 0.82rem;
+    line-height: 1.48;
+    margin-bottom: 0.35rem;
+  }
+
+  .update-takeaway {
+    font-size: 0.74rem;
+    line-height: 1.4;
+  }
+
   .about-banner-card {
     padding: 1rem 1.05rem;
   }
@@ -2095,7 +2259,6 @@ h1, h2, h3, h4, h5, h6 {
   .about-pillar-card,
   .edu-item,
   .family-card,
-  .update-card-content,
   .whatsapp-card,
   .channel-card,
   .social-link-card {
