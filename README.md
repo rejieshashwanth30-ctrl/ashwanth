@@ -1,8 +1,8 @@
 # Rejiesh Ashwanth — Personal Founder Website
 
-A clean, professional, and responsive personal founder website for **Rejiesh Ashwanth**, Co-founder and CEO of **ADYK Multi Venture**.
+A clean, polished, and professional personal founder website for **Rejiesh Ashwanth**, Co-founder and CEO of **ADYK Multi Venture Company**.
 
-Built with semantic HTML5, high-performance Vanilla CSS (predominantly white background, soft off-white section backgrounds, restrained purple/teal accents, refined cards), and lightweight Vanilla JavaScript.
+Built with semantic HTML5, restrained monochrome Vanilla CSS (pure white background, soft light gray alternating sections, black headings, dark gray body copy, subtle light gray borders), and lightweight Vanilla JavaScript.
 
 ---
 
@@ -13,9 +13,9 @@ To run the site locally on any machine:
 ### Option 1: Running Local Server
 ```bash
 # Using Node
-node -e "const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let f=path.join('.',req.url==='/'?'index.html':req.url);fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end('Not found');}else{res.writeHead(200);res.end(d);}})}).listen(3456,()=>console.log('Running on http://localhost:3456'));"
+node -e "const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let f=path.join('.',req.url==='/'?'index.html':req.url);fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end('Not found');}else{res.writeHead(200);res.end(d);}})}).listen(3000,()=>console.log('Running on http://localhost:3000'));"
 ```
-Then visit **http://localhost:3456**.
+Then visit **http://localhost:3000**.
 
 ### Option 2: Direct Browser
 Double-click `index.html` to open directly in any modern browser.
@@ -31,11 +31,10 @@ Double-click `index.html` to open directly in any modern browser.
 {
   id: "update-5",
   date: "November 2026",
-  tag: "ADYK WIQN",             // e.g. "ADYK WIQN", "Milestone", "Venture"
-  tagType: "teal",              // Options: "teal" | "purple" | "coral"
+  tag: "ADYK WIQN",
   title: "Your Update Title",
   content: "Describe what you built, learned, or shipped.",
-  note: "Brief takeaway or next step"
+  note: "Brief takeaway or next step (optional)"
 },
 ```
 
@@ -47,17 +46,18 @@ The newest update will always display first at the top of the timeline.
 
 ```
 d:/ashwanth own/
-├── index.html               # Semantic markup, high-contrast typography, refined sections
+├── index.html               # Semantic HTML5, restrained monochrome typography, accessible sections
 ├── css/
-│   └── style.css            # Clean light design system, refined cards, restrained accents
+│   └── style.css            # Clean monochrome design system, Inter typography, mobile responsive
 ├── js/
 │   ├── updates.js           # Chronological updates list & rendering engine
-│   └── main.js              # Scroll progress, sticky nav, reveal observer, WhatsApp handlers
+│   └── main.js              # Sticky nav, mobile menu, WhatsApp cards, clipboard copy, reveal observer
 ├── assets/
-│   ├── rejiesh-ashwanth.jpg # High-resolution founder portrait
-│   ├── rejiesh-work-1.jpg   # Work photo 1: Focused on coding at laptop desk
-│   ├── rejiesh-work-2.jpg   # Work photo 2: Working on campus with laptop
-│   └── favicon.svg          # Crisp brand monogram icon
+│   ├── rejiesh-portrait.jpg # Main portrait photo (Opening hero section)
+│   ├── rejiesh-work-1.jpg   # Work photo 1: Focused on development at desk (Founder Story)
+│   ├── rejiesh-work-2.jpg   # Work photo 2: Working on campus with laptop (About ADYK)
+│   ├── rejiesh-ashwanth.jpg # Portrait backup
+│   └── favicon.svg          # Minimalist monochrome favicon
 └── README.md                # Documentation & instructions
 ```
 

@@ -1,10 +1,10 @@
 /**
- * MAIN INTERACTIVITY & EXPERIENCE LOGIC
- * Rejiesh Ashwanth - Personal Founder Website (Clean & Professional)
+ * MAIN JAVASCRIPT LOGIC
+ * Rejiesh Ashwanth — Personal Founder Website
+ * Clean, lightweight, professional interactions
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  initScrollProgress();
   initStickyNav();
   initMobileMenu();
   initScrollReveal();
@@ -14,42 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /**
- * 1. SLIM SCROLL PROGRESS INDICATOR
- */
-function initScrollProgress() {
-  const progressBar = document.getElementById("scroll-progress-bar");
-  if (!progressBar) return;
-
-  const updateProgress = () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollPercentage = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    progressBar.style.width = `${Math.min(100, Math.max(0, scrollPercentage))}%`;
-  };
-
-  window.addEventListener("scroll", updateProgress, { passive: true });
-  updateProgress();
-}
-
-/**
- * 2. STICKY NAV & ACTIVE SECTION HIGHLIGHTING
+ * 1. STICKY NAV & ACTIVE SECTION HIGHLIGHTING
  */
 function initStickyNav() {
-  const nav = document.getElementById("site-header");
+  const header = document.getElementById("site-header");
   const navLinks = document.querySelectorAll(".nav-link[href^='#']");
   const sections = document.querySelectorAll("section[id]");
 
   const handleNavScroll = () => {
-    if (!nav) return;
-    if (window.scrollY > 20) {
-      nav.classList.add("nav-scrolled");
+    if (!header) return;
+    if (window.scrollY > 15) {
+      header.classList.add("nav-scrolled");
     } else {
-      nav.classList.remove("nav-scrolled");
+      header.classList.remove("nav-scrolled");
     }
 
     // Determine current active section
     let currentId = "";
-    const scrollPos = window.scrollY + 140;
+    const scrollPos = window.scrollY + 120;
 
     sections.forEach((section) => {
       const top = section.offsetTop;
@@ -74,21 +56,25 @@ function initStickyNav() {
   window.addEventListener("scroll", handleNavScroll, { passive: true });
   handleNavScroll();
 
-  // Smooth scroll with offset for anchor clicks
-  navLinks.forEach((link) => {
+  // Smooth scroll with offset for anchor links
+  document.querySelectorAll("a[href^='#']").forEach((link) => {
     link.addEventListener("click", (e) => {
       const targetId = link.getAttribute("href");
-      if (targetId.startsWith("#") && targetId.length > 1) {
+      if (targetId && targetId.length > 1) {
         const targetEl = document.querySelector(targetId);
         if (targetEl) {
           e.preventDefault();
           targetEl.scrollIntoView({ behavior: "smooth" });
+          
           // Close mobile menu if open
           const mobileMenu = document.getElementById("mobile-menu");
           const menuBtn = document.getElementById("mobile-menu-btn");
           if (mobileMenu && mobileMenu.classList.contains("is-open")) {
             mobileMenu.classList.remove("is-open");
-            menuBtn.setAttribute("aria-expanded", "false");
+            if (menuBtn) {
+              menuBtn.setAttribute("aria-expanded", "false");
+              menuBtn.classList.remove("is-active");
+            }
             document.body.classList.remove("menu-locked");
           }
         }
@@ -98,7 +84,7 @@ function initStickyNav() {
 }
 
 /**
- * 3. COMPACT MOBILE MENU
+ * 2. COMPACT ACCESSIBLE MOBILE MENU
  */
 function initMobileMenu() {
   const menuBtn = document.getElementById("mobile-menu-btn");
@@ -123,18 +109,35 @@ function initMobileMenu() {
       }
     });
   });
+
+  // Close when pressing Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+      toggleMenu();
+      menuBtn.focus();
+    }
+  });
+
+  // Close when clicking outside of navbar
+  document.addEventListener("click", (e) => {
+    if (
+      mobileMenu.classList.contains("is-open") &&
+      !mobileMenu.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      toggleMenu();
+    }
+  });
 }
 
 /**
- * 4. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
- * Respects prefers-reduced-motion
+ * 3. SUBTLE SCROLL REVEAL (RESPECTS PREFERS-REDUCED-MOTION)
  */
 function initScrollReveal() {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const revealElements = document.querySelectorAll(".reveal-on-scroll");
 
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-    // If user prefers reduced motion or browser doesn't support observer, immediately show everything
     revealElements.forEach((el) => el.classList.add("is-visible"));
     return;
   }
@@ -159,8 +162,8 @@ function initScrollReveal() {
 }
 
 /**
- * 5. WHATSAPP CONVERSATION CARDS
- * Ensures safe browser behavior, clarity that messages are pre-filled, not auto-sent
+ * 4. WHATSAPP CONVERSATION CARDS
+ * Prepares messages for visitors to review and send directly
  */
 function initWhatsAppCards() {
   const cards = document.querySelectorAll(".whatsapp-card[data-wa-url]");
@@ -175,7 +178,6 @@ function initWhatsAppCards() {
 
     card.addEventListener("click", handleCardClick);
 
-    // Keyboard accessibility
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -186,7 +188,7 @@ function initWhatsAppCards() {
 }
 
 /**
- * 6. EMAIL COPY TO CLIPBOARD
+ * 5. EMAIL COPY TO CLIPBOARD
  */
 function initEmailCopy() {
   const copyBtn = document.getElementById("copy-email-btn");
@@ -200,7 +202,6 @@ function initEmailCopy() {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(emailText);
       } else {
-        // Fallback for older contexts
         const textarea = document.createElement("textarea");
         textarea.value = emailText;
         textarea.style.position = "fixed";
@@ -224,7 +225,7 @@ function initEmailCopy() {
 }
 
 /**
- * 7. CURRENT YEAR FOOTER
+ * 6. FOOTER CURRENT YEAR
  */
 function initCurrentYear() {
   const yearEl = document.getElementById("current-year");
