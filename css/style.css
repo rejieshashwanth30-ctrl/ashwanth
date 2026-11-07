@@ -1399,19 +1399,220 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
+   STARTUP PAGE STYLES (ADYK Multi Venture Company)
+   -------------------------------------------------------------------------- */
+.back-bar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.startup-hero-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.startup-mission-quote {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-heading);
+  font-weight: 500;
+  font-style: italic;
+  max-width: 720px;
+  margin: 1.25rem auto 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--bg-subtle);
+  border-left: 3px solid var(--text-heading);
+  border-radius: var(--radius-sm);
+  text-align: left;
+}
+
+.startup-official-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.startup-founding-banner {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.founding-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.founding-statement-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.founding-role-note {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.startup-grid {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.startup-narrative-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.startup-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+}
+
+.startup-story-text p {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin-bottom: 1rem;
+}
+
+.startup-story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.startup-pillars-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.startup-pillar-mini {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.95rem;
+}
+
+.startup-pillar-mini .pillar-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.startup-pillar-mini .pillar-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.3rem;
+}
+
+.startup-pillar-mini .pillar-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.startup-aside-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.startup-company-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.company-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.company-fact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.company-fact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.company-fact-item .fact-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.company-fact-item .fact-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.company-fact-item .fact-value a {
+  color: var(--text-heading);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
    10. EDUCATION SECTION
    -------------------------------------------------------------------------- */
 .education-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.15rem;
 }
 
 .edu-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1.25rem;
+  padding: 1.35rem 1.5rem;
   background-color: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
@@ -1424,11 +1625,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .edu-bullet {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: var(--text-heading);
-  margin-top: 0.45rem;
+  margin-top: 0.55rem;
   flex-shrink: 0;
 }
 
@@ -1436,14 +1637,33 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
 }
 
+.edu-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
 .edu-stage-tag {
   display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
-  margin-bottom: 0.3rem;
+}
+
+.edu-period-tag {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
 }
 
 .edu-title {
@@ -1451,17 +1671,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 0.25rem;
+  line-height: 1.35;
 }
 
 .edu-school {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--text-body);
-}
-
-.edu-period {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 0.35rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1474,32 +1689,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .family-card {
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 1.65rem;
   background-color: #ffffff;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast);
+  min-height: 120px;
+}
+
+.family-card:hover {
+  border-color: var(--border-medium);
 }
 
 .family-relation {
-  font-size: 0.76rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .family-name {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--text-heading);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
 }
 
 .family-occupation {
   font-size: 0.92rem;
   color: var(--text-body);
+  margin-top: 0.2rem;
+  line-height: 1.45;
 }
 
 /* --------------------------------------------------------------------------
@@ -2375,6 +2602,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.85rem;
   }
 
+  .edu-row-top {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .edu-period-tag {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.45rem;
+  }
+
   .edu-period {
     font-size: 0.76rem;
     margin-top: 0.2rem;
@@ -2425,6 +2662,50 @@ h1, h2, h3, h4, h5, h6 {
 
   .projects-group-desc {
     font-size: 0.86rem;
+  }
+
+  /* Startup Page Responsive */
+  .startup-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .startup-narrative-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .startup-card-title {
+    font-size: 1.18rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .startup-pillars-row {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .startup-founding-banner {
+    padding: 1.15rem 1.15rem;
+  }
+
+  .founding-statement-text {
+    font-size: 1rem;
+  }
+
+  .startup-mission-quote {
+    font-size: 0.98rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .back-bar-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .back-bar-flex .btn-back-home {
+    width: 100%;
+    justify-content: center;
   }
 
   .projects-cta-box {

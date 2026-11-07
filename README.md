@@ -46,7 +46,8 @@ The newest update will always display first at the top of the timeline.
 
 ```
 d:/ashwanth own/
-├── index.html               # Main home page: introduction, founder story, education, updates, contact
+├── index.html               # Main home page: introduction, founder story, education, family, updates, contact
+├── startup.html             # Dedicated Startup page: ADYK Multi Venture Company, founding statement, mission
 ├── projects.html            # Projects page: "Projects Built by Rejiesh Ashwanth" (5 project cards)
 ├── project-wiqn.html        # Dedicated Overview: ADYK WIQN (Live software platform)
 ├── project-inspire.html     # Dedicated Overview: ADYK Inspire (Problem-led creator tooling)

@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
+    { "source": "/startup", "destination": "/startup.html" },
     { "source": "/projects", "destination": "/projects.html" },
     { "source": "/projects/wiqn", "destination": "/project-wiqn" },
     { "source": "/projects/inspire", "destination": "/project-inspire" },
