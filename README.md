@@ -13,12 +13,12 @@ To run the site locally on any machine:
 ### Option 1: Running Local Server
 ```bash
 # Using Node
-node -e "const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let f=path.join('.',req.url==='/'?'index.html':req.url);fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end('Not found');}else{res.writeHead(200);res.end(d);}})}).listen(3000,()=>console.log('Running on http://localhost:3000'));"
+node -e "const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let u=req.url.split('?')[0];let f=path.join('.',u==='/'?'index.html':(u==='/projects'?'projects.html':u));fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end('Not found');}else{res.writeHead(200);res.end(d);}})}).listen(3000,()=>console.log('Running on http://localhost:3000'));"
 ```
-Then visit **http://localhost:3000**.
+Then visit **http://localhost:3000** or **http://localhost:3000/projects**.
 
 ### Option 2: Direct Browser
-Double-click `index.html` to open directly in any modern browser.
+Double-click `index.html` or `projects.html` to open directly in any modern browser.
 
 ---
 
@@ -46,7 +46,9 @@ The newest update will always display first at the top of the timeline.
 
 ```
 d:/ashwanth own/
-├── index.html               # Semantic HTML5, restrained monochrome typography, accessible sections
+├── index.html               # Main home page: introduction, founder story, education, updates, contact
+├── projects.html            # Dedicated Projects page: ADYK Products & Other Projects
+├── vercel.json              # Clean URLs and /projects routing configuration
 ├── css/
 │   └── style.css            # Clean monochrome design system, Inter typography, mobile responsive
 ├── js/

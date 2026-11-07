@@ -24,7 +24,7 @@ const BUILD_UPDATES = [
     date: "October 2026",
     tag: "ADYK WIQN",
     title: "Launched ADYK WIQN — Live Now",
-    content: "Within a month of founding ADYK Multi Venture Company, we built and launched ADYK WIQN. Inspired by the need to verify how projects operate in practice, the platform provides direct project observation and utility for builders.",
+    content: "Within a month, we built a platform called ADYK WIQN, and it is now live. Inspired by the need to verify how projects operate in practice, the platform provides direct project observation and utility for builders.",
     note: "Status: Live at wiqn.in and open on GitHub."
   },
   {
@@ -32,8 +32,8 @@ const BUILD_UPDATES = [
     date: "2025–2026",
     tag: "Hackathons",
     title: "10+ Hackathons with the Team: Starting with ROAD SOS",
-    content: "Participated in more than 10 hackathons with my team, starting with our first project ROAD SOS. Reached Stage 2 in more than two competitions. While we didn't win, shared problem-solving and rapid iteration taught us invaluable teamwork and resilience.",
-    note: "Key takeaway: Growth through shared problem-solving and rapid execution."
+    content: "My first hackathon project with my team was ROAD SOS. Since then, we have participated in more than 10 hackathons together and reached Stage 2 in more than two. We didn’t win, but working with my team taught me a lot and helped me grow through collaboration and shared problem-solving.",
+    note: "Key takeaway: Growth through collaboration and shared problem-solving."
   },
   {
     id: "update-3",
