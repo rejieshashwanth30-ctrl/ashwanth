@@ -47,8 +47,13 @@ The newest update will always display first at the top of the timeline.
 ```
 d:/ashwanth own/
 ├── index.html               # Main home page: introduction, founder story, education, updates, contact
-├── projects.html            # Dedicated Projects page: ADYK Products & Other Projects
-├── vercel.json              # Clean URLs and /projects routing configuration
+├── projects.html            # Projects page: "Projects Built by Rejiesh Ashwanth" (5 project cards)
+├── project-wiqn.html        # Dedicated Overview: ADYK WIQN (Live software platform)
+├── project-inspire.html     # Dedicated Overview: ADYK Inspire (Problem-led creator tooling)
+├── project-cardex.html      # Dedicated Overview: ADYK Cardex (Developer & creator project)
+├── project-attent-in.html   # Dedicated Overview: ATTENT-IN (Early Student OS)
+├── project-road-sos.html    # Dedicated Overview: ROAD SOS (First hackathon with team)
+├── vercel.json              # Clean URLs and /projects rewrites configuration
 ├── css/
 │   └── style.css            # Clean monochrome design system, Inter typography, mobile responsive
 ├── js/

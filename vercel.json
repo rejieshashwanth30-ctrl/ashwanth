@@ -2,6 +2,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/projects", "destination": "/projects.html" }
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/projects/wiqn", "destination": "/project-wiqn.html" },
+    { "source": "/projects/inspire", "destination": "/project-inspire.html" },
+    { "source": "/projects/cardex", "destination": "/project-cardex.html" },
+    { "source": "/projects/attent-in", "destination": "/project-attent-in.html" },
+    { "source": "/projects/road-sos", "destination": "/project-road-sos.html" }
   ]
 }
