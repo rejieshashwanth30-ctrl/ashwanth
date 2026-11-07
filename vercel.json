@@ -3,10 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/projects", "destination": "/projects.html" },
-    { "source": "/projects/wiqn", "destination": "/project-wiqn.html" },
-    { "source": "/projects/inspire", "destination": "/project-inspire.html" },
-    { "source": "/projects/cardex", "destination": "/project-cardex.html" },
-    { "source": "/projects/attent-in", "destination": "/project-attent-in.html" },
-    { "source": "/projects/road-sos", "destination": "/project-road-sos.html" }
+    { "source": "/projects/wiqn", "destination": "/project-wiqn" },
+    { "source": "/projects/inspire", "destination": "/project-inspire" },
+    { "source": "/projects/cardex", "destination": "/project-cardex" },
+    { "source": "/projects/attent-in", "destination": "/project-attent-in" },
+    { "source": "/projects/road-sos", "destination": "/project-road-sos" }
   ]
 }
