@@ -1110,6 +1110,134 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
 }
 
+/* Workflow Sequence / Journey Bar */
+.workflow-box {
+  margin: 1.75rem 0 2rem;
+}
+
+.workflow-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.workflow-sequence {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 1.15rem 1.35rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.workflow-step {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  background-color: #ffffff;
+  border: 1px solid var(--border-medium);
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.workflow-arrow {
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.82rem;
+  user-select: none;
+}
+
+/* Capabilities Grid */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.capability-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.7rem 0.9rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.45;
+  transition: border-color var(--transition-fast);
+}
+
+.capability-item:hover {
+  border-color: var(--border-medium);
+}
+
+.capability-bullet {
+  color: var(--text-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+/* Core Idea Highlight Card */
+.core-idea-card {
+  padding: 1.4rem 1.6rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--text-heading);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 1.85rem 0;
+}
+
+.core-idea-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.core-idea-text {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  line-height: 1.55;
+}
+
+/* Decision Badges */
+.decision-badges-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.decision-badge {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  border: 1px solid var(--border-medium);
+  color: var(--text-heading);
+}
+
 /* --------------------------------------------------------------------------
    9B. PROJECTS PREVIEW & DEDICATED PROJECTS PAGE STYLES
    -------------------------------------------------------------------------- */
@@ -2629,6 +2757,39 @@ h1, h2, h3, h4, h5, h6 {
 
   .project-detail-section {
     margin-bottom: 2rem;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .workflow-sequence {
+    padding: 0.85rem 1rem;
+    gap: 0.35rem;
+  }
+
+  .workflow-step {
+    font-size: 0.68rem;
+    padding: 0.28rem 0.55rem;
+  }
+
+  .workflow-arrow {
+    font-size: 0.72rem;
+  }
+
+  .capability-item {
+    font-size: 0.82rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .core-idea-card {
+    padding: 1.15rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .core-idea-text {
+    font-size: 0.98rem;
   }
 
   .project-detail-heading {
