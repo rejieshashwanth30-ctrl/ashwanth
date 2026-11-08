@@ -4,6 +4,7 @@
   "rewrites": [
     { "source": "/startup", "destination": "/startup.html" },
     { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/projects/gitrium", "destination": "/project-gitrium" },
     { "source": "/projects/wiqn", "destination": "/project-wiqn" },
     { "source": "/projects/inspire", "destination": "/project-inspire" },
     { "source": "/projects/cardex", "destination": "/project-cardex" },
