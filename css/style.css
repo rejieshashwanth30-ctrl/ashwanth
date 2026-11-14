@@ -1035,6 +1035,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75rem;
 }
 
+/* Brand logo badge inside project card */
+.editorial-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  width: fit-content;
+}
+
+.editorial-brand-logo {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+}
+
 .editorial-desc {
   font-size: 0.96rem;
   color: var(--text-body);
@@ -1394,6 +1415,96 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--text-heading);
   line-height: 1.55;
+}
+
+/* Project Hero Brand Logo */
+.project-hero-brand {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.15rem;
+  padding: 0.5rem 0.95rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.project-hero-logo {
+  display: block;
+  height: 36px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
+
+/* Capability Groups Presentation */
+.capability-groups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.capability-group-card {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.capability-group-card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+.capability-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.capability-group-num {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.capability-group-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.capability-group-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.capability-group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.capability-item-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.capability-item-desc {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin: 0;
 }
 
 /* Decision Badges */

@@ -49,6 +49,7 @@ d:/ashwanth own/
 ├── index.html               # Main home page: introduction, founder story, education, family, updates, contact
 ├── startup.html             # Dedicated Startup page: ADYK Multi Venture Company, founding statement, mission
 ├── projects.html            # Projects page: "Projects Built by Rejiesh Ashwanth" (featured project cards)
+├── project-marrownode.html  # Dedicated Overview: MarrowNode (Evidence-Based Project Intelligence Platform)
 ├── project-gitrium.html     # Dedicated Overview: GITRIUM (Evidence-Based Developer Intelligence Platform)
 ├── project-wiqn.html        # Dedicated Overview: ADYK WIQN (Live software platform)
 ├── project-inspire.html     # Dedicated Overview: ADYK Inspire (Problem-led creator tooling)
