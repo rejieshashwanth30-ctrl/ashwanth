@@ -1,6 +1,6 @@
 # Rejiesh Ashwanth — Personal Founder Website
 
-A clean, polished, and professional personal founder website for **Rejiesh Ashwanth**, Co-founder and CEO of **ADYK Multi Venture Company**.
+A clean, polished, and professional personal founder website for **Rejiesh Ashwanth**, Co-founder and Indian Entrepreneur.
 
 Built with semantic HTML5, restrained monochrome Vanilla CSS (pure white background, soft light gray alternating sections, black headings, dark gray body copy, subtle light gray borders), and lightweight Vanilla JavaScript.
 

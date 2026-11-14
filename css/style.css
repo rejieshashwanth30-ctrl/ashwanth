@@ -271,6 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .brand-name {
@@ -279,6 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-heading);
   letter-spacing: -0.01em;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .brand-role {
@@ -286,6 +288,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
   font-weight: 400;
   line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Desktop Menu Links */
@@ -328,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .btn-nav-chat {
@@ -497,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-photo-frame {
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
   margin-left: auto;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
@@ -508,9 +514,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-photo-img {
   width: 100%;
-  height: 480px;
+  aspect-ratio: 3 / 4;
+  height: auto;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 15%;
   display: block;
 }
 
@@ -932,6 +939,185 @@ h1, h2, h3, h4, h5, h6 {
 .btn-product-live:active,
 .btn-product-github:active {
   transform: translateY(1px);
+}
+
+/* --------------------------------------------------------------------------
+   9B. EDITORIAL PORTFOLIO PRESENTATION (projects.html)
+   Refined, architectural presentation with index numbers, narrative layout,
+   high-contrast Overview buttons, and clean typographic hierarchy.
+   -------------------------------------------------------------------------- */
+.container-editorial {
+  max-width: 980px;
+}
+
+.portfolio-editorial-section {
+  padding-top: 1.25rem;
+  padding-bottom: 4.5rem;
+}
+
+.portfolio-editorial-header {
+  margin-bottom: 2.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid var(--text-heading);
+}
+
+.portfolio-editorial-title {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.portfolio-editorial-lead {
+  font-size: clamp(1rem, 2.2vw, 1.12rem);
+  color: var(--text-body);
+  line-height: 1.65;
+  max-width: 780px;
+  margin: 0;
+}
+
+.portfolio-editorial-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-project-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  padding: 2.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color var(--transition-fast);
+}
+
+.editorial-project-row:hover {
+  background-color: rgba(0, 0, 0, 0.012);
+}
+
+.editorial-row-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-top: 0.2rem;
+}
+
+.editorial-index {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.editorial-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.editorial-row-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-title {
+  font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.editorial-desc {
+  font-size: 0.96rem;
+  color: var(--text-body);
+  line-height: 1.65;
+  margin-bottom: 1.35rem;
+  max-width: 680px;
+}
+
+.editorial-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* High-contrast Overview button */
+.btn-editorial-overview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 40px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  background-color: #0f1419;
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  border: 1px solid #0f1419;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-editorial-overview:hover {
+  background-color: #272f37;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-editorial-overview:active {
+  transform: translateY(1px);
+}
+
+/* Secondary links (Visit, GitHub) */
+.btn-editorial-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 40px;
+  padding: 0.55rem 1.05rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: var(--text-heading);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-editorial-link:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--text-heading);
+  color: var(--text-heading);
+  transform: translateY(-1px);
+}
+
+.btn-editorial-link:active {
+  transform: translateY(1px);
+}
+
+.portfolio-editorial-cta {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  text-align: center;
+  margin-top: 3.5rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -2168,12 +2354,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-photo-frame {
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .hero-photo-img {
-    height: 340px;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center 15%;
   }
 
   .story-grid {
@@ -2362,14 +2550,51 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 40px;
   }
 
+  .hero-photo-frame {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .hero-photo-img {
-    height: 280px;
-    object-position: center 20%;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center 15%;
   }
 
   .hero-photo-caption {
     padding: 0.5rem 0.75rem;
     font-size: 0.74rem;
+  }
+
+  /* Editorial Portfolio Responsive */
+  .editorial-project-row {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    padding: 2rem 0;
+  }
+
+  .editorial-row-meta {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.85rem;
+    padding-top: 0;
+  }
+
+  .editorial-index {
+    font-size: 1rem;
+  }
+
+  .portfolio-editorial-header {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .portfolio-editorial-title {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-editorial-lead {
+    font-size: 0.95rem;
   }
 
   /* Founder Story */
@@ -2941,8 +3166,41 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.85rem;
   }
 
+  .hero-photo-frame {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
   .hero-photo-img {
-    height: clamp(180px, 48vw, 240px);
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center 15%;
+  }
+
+  /* Editorial Portfolio Responsive */
+  .portfolio-editorial-section {
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .portfolio-editorial-title {
+    font-size: 1.5rem;
+  }
+
+  .editorial-title {
+    font-size: 1.2rem;
+  }
+
+  .editorial-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-editorial-overview,
+  .btn-editorial-link {
+    min-height: 38px;
+    font-size: 0.82rem;
+    padding: 0.5rem 0.95rem;
   }
 
   .story-photo-img {
@@ -3218,10 +3476,26 @@ h1, h2, h3, h4, h5, h6 {
 
   .brand-name {
     font-size: 0.88rem;
+    white-space: nowrap;
   }
 
   .brand-role {
     font-size: 0.66rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .hero-photo-frame {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+
+  .hero-photo-img {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center 15%;
   }
 
   .btn-nav-chat {
