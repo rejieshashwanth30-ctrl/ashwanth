@@ -24,7 +24,7 @@ const BUILD_UPDATES = [
     date: "October 2026",
     tag: "ADYK WIQN",
     title: "Launched ADYK WIQN — Live Now",
-    content: "Within a month, we built a platform called ADYK WIQN, and it is now live. Inspired by the need to verify how projects operate in practice, the platform provides direct project observation and utility for builders.",
+    content: "Within a month, I built a platform called ADYK WIQN, and it is now live. Inspired by the need to verify how projects operate in practice, the platform provides direct project observation and utility for builders.",
     note: "Status: Live at wiqn.in and open on GitHub."
   },
   {
@@ -40,8 +40,8 @@ const BUILD_UPDATES = [
     date: "September – October 2026",
     tag: "Inspire & Cardex",
     title: "Addressing Developer and Creator Challenges",
-    content: "Worked with my team on ADYK Inspire and ADYK Cardex, two products conceived to address real-world problems faced by developers and creators.",
-    note: "Milestone: Exploring two targeted tools for creators during our first 60 days."
+    content: "I built ADYK Inspire and ADYK Cardex, two products conceived to address real-world problems faced by developers and creators.",
+    note: "Milestone: Exploring two targeted tools for creators during my first 60 days."
   },
   {
     id: "update-2",
