@@ -3,6 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/startup", "destination": "/startup.html" },
+    { "source": "/conversation", "destination": "/conversation.html" },
     { "source": "/projects", "destination": "/projects.html" },
     { "source": "/projects/marrownode", "destination": "/project-marrownode" },
     { "source": "/projects/gitrium", "destination": "/project-gitrium" },

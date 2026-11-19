@@ -20,10 +20,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Google Font: Inter -->
+  <!-- Google Fonts: Inter, Newsreader & Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- Main Restrained Monochrome Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -496,104 +496,108 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 8: WHATSAPP CONVERSATION CARDS
-         Four clickable cards with pre-filled wa.me links
+         SECTION 8: START A CONVERSATION
+         Editorial two-column layout: warm ivory background, charcoal typography,
+         muted olive accent, direct WhatsApp option, and refined topic list with thin dividers
          ==================================================================== -->
-    <section id="whatsapp-chat" class="section section-subtle" aria-label="WhatsApp Prompts">
-      <div class="container">
+    <section id="whatsapp-chat" class="talk-editorial-section" aria-label="Start a conversation">
+      <div class="container container-talk">
+        <div class="talk-editorial-grid">
 
-        <div class="section-header">
-          <span class="section-kicker">Direct Prompts</span>
-          <h2 class="section-title">Start a conversation</h2>
-          <p class="section-subtitle">
-            Choose any topic below to open WhatsApp with your message already prepared. You can review, edit, and send whenever you’re ready.
-          </p>
-        </div>
+          <!-- Left Column: Introduction & Direct Option -->
+          <div class="talk-editorial-intro reveal-on-scroll">
+            <span class="talk-kicker">LET’S TALK</span>
+            <h2 class="talk-headline">Good things start with a conversation.</h2>
+            <p class="talk-lead">
+              Choose a topic below. WhatsApp will open with a message ready for you to review, edit, and send.
+            </p>
 
-        <!-- Clarification Banner: Pre-filled, not auto-sent -->
-        <div class="whatsapp-notice-box reveal-on-scroll">
-          <div>
-            <strong>Please note:</strong> Clicking any prompt opens WhatsApp to <strong>+91 8870605699</strong> with your message drafted. Nothing is sent automatically until you review and tap Send.
+            <!-- Direct Contact Option -->
+            <div class="talk-direct-option">
+              <span class="talk-direct-label">Direct WhatsApp</span>
+              <a href="https://wa.me/918870605699?text=Hi%20Rejiesh%2C%20I%20would%20like%20to%20connect%21" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="talk-direct-link"
+                 aria-label="Direct message Rejiesh on WhatsApp at +91 8870605699 (opens in new tab)">
+                <span class="talk-direct-number">+91 8870605699</span>
+                <span class="talk-direct-cta">Chat directly <span class="talk-arrow" aria-hidden="true">→</span></span>
+              </a>
+            </div>
+
+            <!-- Small Elegant Note -->
+            <div class="talk-inline-note">
+              <span class="talk-note-dot" aria-hidden="true">•</span>
+              <p class="talk-note-text">
+                WhatsApp opens with your message drafted. Review and tap <strong>Send</strong> whenever you’re ready — nothing is sent automatically.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- 4 Clickable Question Cards -->
-        <div class="whatsapp-cards-grid">
+          <!-- Right Column: Conversation Topics List -->
+          <div class="talk-editorial-topics reveal-on-scroll">
+            <div class="talk-topics-list" role="list">
 
-          <!-- Card 1: Inspire & Cardex -->
-          <a href="https://wa.me/918870605699?text=Can%20you%20tell%20me%20about%20ADYK%20Inspire%20and%20ADYK%20Cardex%3F" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="whatsapp-card reveal-on-scroll" 
-             aria-label="Open WhatsApp asking: Can you tell me about ADYK Inspire and ADYK Cardex?">
-            <div>
-              <div class="wa-card-header">
-                <span class="wa-topic-label">Products</span>
-                <span class="wa-open-action">Open in WhatsApp ↗</span>
-              </div>
-              <div class="wa-card-message">“Can you tell me about ADYK Inspire and ADYK Cardex?”</div>
-            </div>
-            <div class="wa-card-recipient">
-              <span>Prepared for +91 8870605699</span>
-            </div>
-          </a>
+              <!-- Topic 1: Products -->
+              <a href="https://wa.me/918870605699?text=Can%20you%20tell%20me%20about%20ADYK%20Inspire%20and%20ADYK%20Cardex%3F" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="talk-topic-row" 
+                 role="listitem"
+                 aria-label="Ask about Products: Can you tell me about ADYK Inspire and ADYK Cardex? (opens WhatsApp)">
+                <div class="talk-topic-content">
+                  <span class="talk-topic-tag">Products</span>
+                  <span class="talk-topic-phrase">“Can you tell me about ADYK Inspire and ADYK Cardex?”</span>
+                </div>
+                <span class="talk-topic-arrow" aria-hidden="true">→</span>
+              </a>
 
-          <!-- Card 2: ADYK WIQN -->
-          <a href="https://wa.me/918870605699?text=What%20is%20ADYK%20WIQN%3F" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="whatsapp-card reveal-on-scroll" 
-             aria-label="Open WhatsApp asking: What is ADYK WIQN?">
-            <div>
-              <div class="wa-card-header">
-                <span class="wa-topic-label">Platform</span>
-                <span class="wa-open-action">Open in WhatsApp ↗</span>
-              </div>
-              <div class="wa-card-message">“What is ADYK WIQN?”</div>
-            </div>
-            <div class="wa-card-recipient">
-              <span>Prepared for +91 8870605699</span>
-            </div>
-          </a>
+              <!-- Topic 2: Platform -->
+              <a href="https://wa.me/918870605699?text=What%20is%20ADYK%20WIQN%3F" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="talk-topic-row" 
+                 role="listitem"
+                 aria-label="Ask about Platform: What is ADYK WIQN? (opens WhatsApp)">
+                <div class="talk-topic-content">
+                  <span class="talk-topic-tag">Platform</span>
+                  <span class="talk-topic-phrase">“What is ADYK WIQN?”</span>
+                </div>
+                <span class="talk-topic-arrow" aria-hidden="true">→</span>
+              </a>
 
-          <!-- Card 3: Collaboration -->
-          <a href="https://wa.me/918870605699?text=Can%20we%20collaborate%20on%20a%20project%3F" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="whatsapp-card reveal-on-scroll" 
-             aria-label="Open WhatsApp asking: Can we collaborate on a project?">
-            <div>
-              <div class="wa-card-header">
-                <span class="wa-topic-label">Collaboration</span>
-                <span class="wa-open-action">Open in WhatsApp ↗</span>
-              </div>
-              <div class="wa-card-message">“Can we collaborate on a project?”</div>
-            </div>
-            <div class="wa-card-recipient">
-              <span>Prepared for +91 8870605699</span>
-            </div>
-          </a>
+              <!-- Topic 3: Collaboration -->
+              <a href="https://wa.me/918870605699?text=Can%20we%20collaborate%20on%20a%20project%3F" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="talk-topic-row" 
+                 role="listitem"
+                 aria-label="Ask about Collaboration: Can we collaborate on a project? (opens WhatsApp)">
+                <div class="talk-topic-content">
+                  <span class="talk-topic-tag">Collaboration</span>
+                  <span class="talk-topic-phrase">“Can we collaborate on a project?”</span>
+                </div>
+                <span class="talk-topic-arrow" aria-hidden="true">→</span>
+              </a>
 
-          <!-- Card 4: Idea or Problem -->
-          <a href="https://wa.me/918870605699?text=I%20have%20an%20idea%20or%20problem%20I%E2%80%99d%20like%20to%20discuss." 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="whatsapp-card reveal-on-scroll" 
-             aria-label="Open WhatsApp asking: I have an idea or problem I’d like to discuss.">
-            <div>
-              <div class="wa-card-header">
-                <span class="wa-topic-label">Discussion</span>
-                <span class="wa-open-action">Open in WhatsApp ↗</span>
-              </div>
-              <div class="wa-card-message">“I have an idea or problem I’d like to discuss.”</div>
+              <!-- Topic 4: Discussion -->
+              <a href="https://wa.me/918870605699?text=I%20have%20an%20idea%20or%20problem%20I%E2%80%99d%20like%20to%20discuss." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="talk-topic-row" 
+                 role="listitem"
+                 aria-label="Ask about Discussion: I have an idea or problem I’d like to discuss. (opens WhatsApp)">
+                <div class="talk-topic-content">
+                  <span class="talk-topic-tag">Discussion</span>
+                  <span class="talk-topic-phrase">“I have an idea or problem I’d like to discuss.”</span>
+                </div>
+                <span class="talk-topic-arrow" aria-hidden="true">→</span>
+              </a>
+
             </div>
-            <div class="wa-card-recipient">
-              <span>Prepared for +91 8870605699</span>
-            </div>
-          </a>
+          </div>
 
         </div>
-
       </div>
     </section>
 

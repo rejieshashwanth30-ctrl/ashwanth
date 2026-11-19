@@ -2163,8 +2163,220 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
-   13. WHATSAPP CONVERSATION PROMPTS
+   13. START A CONVERSATION — EDITORIAL DESIGN
+   Distinct, warm ivory aesthetic with charcoal typography & muted olive accent
    -------------------------------------------------------------------------- */
+.talk-editorial-section {
+  background-color: #FAF7F2;
+  border-top: 1px solid #ECE6DB;
+  border-bottom: 1px solid #ECE6DB;
+  padding: 5.5rem 0;
+  position: relative;
+}
+
+.container-talk {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.talk-editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+/* Left Column: Intro & Direct Option */
+.talk-editorial-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.talk-kicker {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #5A694E;
+  margin-bottom: 0.85rem;
+  display: inline-block;
+}
+
+.talk-headline {
+  font-family: 'Newsreader', 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.1rem, 3.6vw, 2.75rem);
+  font-weight: 500;
+  color: #1A1D1E;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.1rem;
+}
+
+.talk-lead {
+  font-size: 0.98rem;
+  color: #44494E;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  max-width: 440px;
+}
+
+/* Direct Contact Card */
+.talk-direct-option {
+  background-color: #F4EFE6;
+  border: 1px solid #E5DDD0;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1.35rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.talk-direct-option:hover {
+  background-color: #EDE6DA;
+  border-color: #CFC5B4;
+}
+
+.talk-direct-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #686E74;
+  margin-bottom: 0.4rem;
+}
+
+.talk-direct-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #1A1D1E;
+}
+
+.talk-direct-link:focus-visible {
+  outline: 2px solid #5A694E;
+  outline-offset: 2px;
+}
+
+.talk-direct-number {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1A1D1E;
+}
+
+.talk-direct-cta {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #5A694E;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.talk-direct-option:hover .talk-direct-cta {
+  color: #47543E;
+  transform: translateX(2px);
+}
+
+/* Small Elegant Inline Note */
+.talk-inline-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  color: #63686D;
+  line-height: 1.55;
+  padding: 0 0.2rem;
+}
+
+.talk-note-dot {
+  color: #5A694E;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.talk-note-text {
+  margin: 0;
+}
+
+.talk-note-text strong {
+  color: #2C3033;
+}
+
+/* Right Column: Topics List */
+.talk-editorial-topics {
+  width: 100%;
+}
+
+.talk-topics-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #E8E2D7;
+}
+
+.talk-topic-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.35rem 1.25rem;
+  border-bottom: 1px solid #E8E2D7;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), padding-left var(--transition-fast), border-color var(--transition-fast);
+  cursor: pointer;
+  min-height: 56px;
+}
+
+.talk-topic-row:hover {
+  background-color: #F2ECE0;
+  padding-left: 1.6rem;
+}
+
+.talk-topic-row:focus-visible {
+  outline: 2px solid #5A694E;
+  outline-offset: 2px;
+  background-color: #F2ECE0;
+}
+
+.talk-topic-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.talk-topic-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #5A694E;
+}
+
+.talk-topic-phrase {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1A1D1E;
+  line-height: 1.45;
+}
+
+.talk-topic-arrow {
+  font-size: 1.15rem;
+  color: #686E74;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.talk-topic-row:hover .talk-topic-arrow {
+  color: #5A694E;
+  transform: translateX(4px);
+}
+
+/* Fallback / Backward Compatibility Classes */
 .whatsapp-notice-box {
   display: flex;
   align-items: flex-start;
@@ -3201,6 +3413,45 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.38;
   }
 
+  /* Editorial Conversation Section */
+  .talk-editorial-section {
+    padding: 3.5rem 0;
+  }
+
+  .talk-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .talk-headline {
+    font-size: clamp(1.85rem, 5.2vw, 2.3rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .talk-lead {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .talk-direct-option {
+    padding: 1.15rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .talk-topic-row {
+    padding: 1.15rem 1rem;
+    min-height: 54px;
+  }
+
+  .talk-topic-row:hover {
+    padding-left: 1.25rem;
+  }
+
+  .talk-topic-phrase {
+    font-size: 0.98rem;
+  }
+
   /* WhatsApp Conversation Cards */
   .whatsapp-notice-box {
     padding: 0.75rem 0.95rem;
@@ -3678,6 +3929,65 @@ h1, h2, h3, h4, h5, h6 {
   .channel-card,
   .social-link-card {
     padding: 0.85rem 0.95rem;
+  }
+
+  /* Editorial Conversation Section (Mobile <= 480px) */
+  .talk-editorial-section {
+    padding: 2.75rem 0;
+  }
+
+  .container-talk {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .talk-editorial-grid {
+    gap: 2rem;
+  }
+
+  .talk-headline {
+    font-size: 1.7rem;
+    line-height: 1.22;
+  }
+
+  .talk-lead {
+    font-size: 0.9rem;
+    line-height: 1.58;
+    margin-bottom: 1.35rem;
+  }
+
+  .talk-direct-option {
+    padding: 1rem 1.1rem;
+  }
+
+  .talk-direct-number {
+    font-size: 0.98rem;
+  }
+
+  .talk-direct-cta {
+    font-size: 0.8rem;
+  }
+
+  .talk-topic-row {
+    padding: 1.05rem 0.85rem;
+    min-height: 52px;
+  }
+
+  .talk-topic-tag {
+    font-size: 0.68rem;
+  }
+
+  .talk-topic-phrase {
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .talk-topic-arrow {
+    font-size: 1rem;
+  }
+
+  .talk-inline-note {
+    font-size: 0.78rem;
   }
 }
 
