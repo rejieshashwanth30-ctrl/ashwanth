@@ -121,6 +121,19 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+/* Screen reader accessible text utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* --------------------------------------------------------------------------
    3. LAYOUT & CONTAINERS
    -------------------------------------------------------------------------- */
@@ -604,6 +617,65 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.98rem;
   font-style: italic;
   color: var(--text-heading);
+}
+
+/* --------------------------------------------------------------------------
+   7B. BUILDING WITH PURPOSE SECTION (STANDALONE QUOTE SECTION)
+   -------------------------------------------------------------------------- */
+.purpose-section {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+  background-color: var(--bg-page);
+}
+
+.purpose-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purpose-header {
+  margin-bottom: 2rem;
+}
+
+.purpose-card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.purpose-figure {
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+}
+
+.purpose-image-frame {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background-color: #0f1419;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.purpose-image-frame:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+
+.purpose-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: contain;
+}
+
+#projects.section-white {
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -2593,6 +2665,24 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 2.75rem;
   }
 
+  .purpose-section {
+    padding-top: 2.75rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .purpose-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .purpose-figure {
+    max-width: 440px;
+  }
+
+  #projects.section-white {
+    padding-top: 1.25rem;
+    padding-bottom: 2.75rem;
+  }
+
   .container {
     padding-left: 1.15rem;
     padding-right: 1.15rem;
@@ -3231,6 +3321,24 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 2.25rem;
   }
 
+  .purpose-section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .purpose-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .purpose-figure {
+    max-width: 100%;
+  }
+
+  #projects.section-white {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
   .section-header {
     margin-bottom: 1.25rem;
   }
@@ -3622,6 +3730,16 @@ h1, h2, h3, h4, h5, h6 {
   .section {
     padding-top: 1.85rem;
     padding-bottom: 1.85rem;
+  }
+
+  .purpose-section {
+    padding-top: 1.75rem;
+    padding-bottom: 0.85rem;
+  }
+
+  #projects.section-white {
+    padding-top: 0.85rem;
+    padding-bottom: 1.75rem;
   }
 
   .section-title {

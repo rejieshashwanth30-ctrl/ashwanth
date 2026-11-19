@@ -63,11 +63,13 @@ d:/ashwanth own/
 │   ├── updates.js           # Chronological updates list & rendering engine
 │   └── main.js              # Sticky nav, mobile menu, WhatsApp cards, clipboard copy, reveal observer
 ├── assets/
-│   ├── rejiesh-portrait.jpg # Photo 1: Portrait photo (Opening hero section)
-│   ├── rejiesh-work-1.jpg   # Photo 2: Focused on development at desk (Founder Story)
-│   ├── rejiesh-work-2.jpg   # Photo 3: Working on campus with laptop (About ADYK)
-│   ├── rejiesh-ashwanth.jpg # Portrait asset backup
-│   └── favicon.svg          # Minimalist monochrome favicon
+│   ├── rejiesh-portrait.jpg     # Photo 1: Portrait photo (Opening hero section)
+│   ├── rejiesh-work-1.jpg       # Photo 2: Focused on development at desk (Founder Story)
+│   ├── building-with-purpose.jpg# Photo 3: "Building with Purpose" standalone quote card
+│   ├── rejiesh-work-2.jpg       # Photo 4: Working on campus with laptop (About ADYK)
+│   ├── marrownode-logo.png      # MarrowNode logo asset
+│   ├── rejiesh-ashwanth.jpg     # Portrait asset backup
+│   └── favicon.svg              # Minimalist monochrome favicon
 └── README.md                # Documentation & instructions
 ```
 
